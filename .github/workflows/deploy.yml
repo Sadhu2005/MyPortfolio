@@ -18,16 +18,18 @@ jobs:
       with:
         node-version: 18
 
-    - name: Install Dependencies (Optional if using npm/yarn)
+    - name: Install Dependencies
       run: |
+        cd MyPortfolio  # Change directory if needed
         npm install
 
-    - name: Build Project (Optional if using a build tool)
+    - name: Build Project
       run: |
+        cd MyPortfolio  # Change directory if needed
         npm run build
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages  # Target branch for GitHub Pages
-        folder: .  # Folder containing your index.html and files
+        folder: MyPortfolio/build  # Corrected build directory
