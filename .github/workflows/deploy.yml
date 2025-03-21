@@ -13,23 +13,8 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18
-
-    - name: Install Dependencies
-      run: |
-        cd MyPortfolio  # Change directory if needed
-        npm install
-
-    - name: Build Project
-      run: |
-        cd MyPortfolio  # Change directory if needed
-        npm run build
-
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages  # Target branch for GitHub Pages
-        folder: MyPortfolio/build  # Corrected build directory
+        folder: MyPortfolio  # Correct directory where your HTML, CSS, and JS files are
