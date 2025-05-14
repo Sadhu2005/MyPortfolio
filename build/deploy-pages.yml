@@ -1,0 +1,20 @@
+name: Deploy Portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Change if your default branch is different
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages  # Target branch for GitHub Pages
+        folder: MyPortfolio/build  # Correct directory where your HTML, CSS, and JS files are
