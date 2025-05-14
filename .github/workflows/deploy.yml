@@ -3,7 +3,7 @@ name: FTP Deploy to Hostinger
 on:
   push:
     branches:
-      - main  # or master, depending on your repo
+      - main
 
 jobs:
   ftp-deploy:
@@ -17,7 +17,7 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.82.180.143.67
+        server: 82.180.143.67               # ✅ No "ftp."
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: public_html/
