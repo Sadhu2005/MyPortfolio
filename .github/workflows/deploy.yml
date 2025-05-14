@@ -1,23 +1,23 @@
-name: FTP Deploy
+name: FTP Deploy to Hostinger
 
 on:
   push:
     branches:
-      - main  # or your branch name
+      - main  # or master, depending on your repo
 
 jobs:
   ftp-deploy:
-    name: Upload Website via FTP
+    name: FTP deploy
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
+    - name: Checkout source
+      uses: actions/checkout@v3
 
-      - name: Upload Files via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/  # or change based on your host's folder
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.82.180.143.67
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: public_html/
