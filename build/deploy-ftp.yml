@@ -1,24 +1,23 @@
-name: FTP Deploy to Hostinger
+name: 🚀 FTP Deploy to Hostinger
 
 on:
   push:
     branches:
-      - main  # Runs on push to 'main'
+      - main
 
 jobs:
   ftp-deploy:
-    name: Upload Website via FTP
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Upload to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/          # Default public folder in Hostinger (edit if needed)
-          local-dir: MyPortfolio/build       # Your actual built portfolio folder
+    - name: FTP Deploy to Hostinger
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: ${{ secrets.FTP_SERVER_DIR }}
+        local-dir: ./MyPortfolio/build  # Adjust this path if needed
