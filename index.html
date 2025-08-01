@@ -15,20 +15,51 @@
             <a href="#education">Education</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
+            <a href="#tools">Tools</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
-         
             <a href="#contact">Contact</a>
           
         </div>
         <div class="menu-toggle">&#9776;</div>
     </nav>
 
-    <header>
-        <img src="certificates/sadu.jpg" alt="Sadhu J" class="profile-photo">
-        <h1>Sadhu&nbsp;J</h1>
-
-        <p>Dynamic and Motivated B.E Student Majoring in Artificial Intelligence and Machine Learning.</p>
+    <header style="position: relative; padding-top: 32px; padding-bottom: 32px;">
+        <!-- Profile photo centered and circular -->
+        <img 
+            src="certificates/sadu.jpg" 
+            alt="Sadhu J" 
+            class="profile-photo" 
+            style="
+                display: block;
+                margin: 0 auto 16px auto;
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            "
+        >
+        <!-- Video in top-right corner -->
+        <video 
+            class="profile-video"
+            controls 
+            width="320" 
+            poster="video/VID_20250326_191540.mp4" 
+            style="
+                position: absolute;
+                top: 150px;
+                right: 16px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            "
+        >
+            <source src="video/VID_20250326_191540.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Name and summary centered -->
+        <h1 style="text-align: center;">Sadhu&nbsp;J</h1>
+        <p style="text-align: center;">Dynamic and Motivated B.E Student Majoring in Artificial Intelligence and Machine Learning.</p>
     </header>
 
     <section id="about">
@@ -51,7 +82,7 @@
         <h2 style="text-align: center; color: #fff; font-size: 32px; margin-bottom: 20px;">About Me</h2>
         
         <p style="font-size: 18px; line-height: 1.8; text-align: justify;">
-            🚀 <strong>Aspiring AI & ML Engineer | Data Scientist | AI Tool Builder</strong><br><br>
+             <strong>Aspiring AI & ML Engineer | Data Scientist | AI Tool Builder</strong><br><br>
             
             I am a passionate B.E. student specializing in <strong>Artificial Intelligence and Machine Learning</strong>, with a strong focus on
             <strong>developing intelligent systems and fine-tuning AI models</strong> for real-world applications. Skilled in frameworks like 
@@ -60,13 +91,13 @@
         </p>
         
         <ul style="font-size: 18px; line-height: 1.8; margin-top: 20px;">
-            <li>✅ Developed <strong>"Anu AI"</strong> with vision and voice capabilities for PC and Android.</li>
-            <li>✅ Built <strong>"Choti Anu AI"</strong> for ESP32-CAM with offline face recognition and intelligent conversations.</li>
-            <li>✅ Experienced in supervised, unsupervised, and reinforcement learning models.</li>
+            <li> Developed <strong>"Anu AI"</strong> with vision and voice capabilities for PC and Android.</li>
+            <li> Built <strong>"Choti Anu AI"</strong> for ESP32-CAM with offline face recognition and intelligent conversations.</li>
+            <li> Experienced in supervised, unsupervised, and reinforcement learning models.</li>
         </ul>
         
         <p style="font-size: 18px; line-height: 1.8; margin-top: 20px;">
-            🎯 <strong>Goal:</strong> To enhance my expertise in <strong>neural networks, reinforcement learning, and AI-driven solutions</strong> while contributing to the evolution of AI technologies.
+            <strong>Goal:</strong> To enhance my expertise in <strong>neural networks, reinforcement learning, and AI-driven solutions</strong> while contributing to the evolution of AI technologies.
         </p>
     </div>
 </section>
@@ -132,11 +163,37 @@
         
     </section>
 
+    <section id="tools">
+  <h2>My Tools</h2>
+  <div id="tools-container">
+    <!-- Example Tool Card -->
+    <div class="tool-card">
+      <img src="tools/sample_tool.png" alt="Tool Icon" class="tool-icon">
+      <div class="tool-info">
+        <h3 class="tool-title">Sample Tool Name</h3>
+        <span class="tool-type">Chrome Extension</span>
+        <p class="tool-description">
+          A brief description of your tool, what it does, and why it’s useful. Replace this with your real tool info.
+        </p>
+        <a href="https://yourtoollink.com" target="_blank" class="tool-link-btn">Use Tool</a>
+      </div>
+    </div>
+    <!-- Add more tool-card blocks here as you build more tools -->
+  </div>
+</section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div id="projects-container">
          
+        <div class="project-card">
+  <img src="projects/sample_project.jpg" alt="Sample Project Screenshot" class="project-image">
+  <h3 class="project-title">Sample Project Title</h3>
+  <p class="project-description">
+    This is a brief description of your project. Explain what it does, key features, and any highlights you want to mention. Replace this text with your actual project details.
+  </p>
+  <a href="https://yourprojectwebsite.com" target="_blank" class="project-link-btn">View Project</a>
+</div>
         </div>
         <center><h3> My Projects are in GitHub</h3></center>
         <a href="https://github.com/Sadhu2005">
@@ -144,331 +201,33 @@
     </section>
 
     <section id="certifications">
-        <h2>Certifications</h2>
-        <div id="certificates-container">
+  <h2>Certifications</h2>
+  <div id="certificates-container"></div>
+</section>
 
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr33.jpg">
-                        <img src="certificates/cr33.jpg" alt="SYMBIOT-2025 2<sup>nd</sup> Runner up" >
-                    </a>
-                    <div class="desc"> SYMBIOT-2025 2<sup>nd</sup> Runner up</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr32.jpg">
-                        <img src="certificates/cr32.jpg" alt="SYMBIOT-2025 Participation" >
-                    </a>
-                    <div class="desc"> SYMBIOT-2025 Participation</div>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr31.jpg">
-                        <img src="certificates/cr31.jpg" alt="Project OMEGA 2025 -Code for Enlightenment, 24h National -Level Hacathon Manglore" >
-                    </a>
-                    <div class="desc"> Project OMEGA 2025 -Code for Enlightenment, 24h National -Level Hacathon Manglore</div>
-                </div>
-            </div>
-            
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr30.jpg">
-                        <img src="certificates/cr30.jpg" alt="CODE IGNITER 2025 8<sup>th</sup National Level Coding Competition" >
-                    </a>
-                    <div class="desc"> CODE IGNITER 2025 8<sup>th</sup> National Level Coding Competition</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr29.jpg">
-                        <img src="certificates/cr29.jpg" alt="tcs TechBytes (An inter-College Quiz On IT)" >
-                    </a>
-                    <div class="desc"> tcs TechBytes (An inter-College Quiz On IT)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr28.jpg">
-                        <img src="certificates/cr28.jpg" alt="Unstop Talent Park 2025 (Round 1)" >
-                    </a>
-                    <div class="desc"> Weekly Coding Challenge 20 (Unstop)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr27.jpg">
-                        <img src="certificates/cr27.jpg" alt="Unstop Talent Park 2025 (Round 1)" >
-                    </a>
-                    <div class="desc">Unstop Talent Park 2025 (Round 1)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr26.jpg">
-                        <img src="certificates/cr26.jpg" alt="ced solutions in Go- Testing and Distributed Systems (Infosys Springboard)" >
-                    </a>
-                    <div class="desc">Advanced solutions in Go- Testing and Distributed Systems (Infosys Springboard)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr25.jpg">
-                        <img src="certificates/cr25.jpg" alt="E- Minds Hackathon (28h) GSSS" style="transform: rotate(0deg);">
-                    </a>
-                    <div class="desc">E- Minds Hackathon (28h) GSSS</div>
-                </div>
-            </div>
-
-
-            
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr24.jpg">
-                        <img src="certificates/cr24.jpg" alt="Mini Project Expo GSSS" style="transform: rotate(180deg);">
-                    </a>
-                    <div class="desc">Mini Project Expo (3<sup>rd</sup> Place) GSSS</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr23.jpg">
-                        <img src="certificates/cr23.jpg" alt="Python Coder (Kaggle)">
-                    </a>
-                    <div class="desc">Python Coder (Kaggle)</div>
-                </div>
-            </div>
-
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr22.jpg">
-                        <img src="certificates/cr22.jpg" alt="HP Power Lab by HP (Round 1)">
-                    </a>
-                    <div class="desc">HP Power Lab by HP (Round 1)</div>
-                </div>
-            </div>
-
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr21.png">
-                        <img src="certificates/cr21.png" alt="Software Engineering Fundamentals- Software Development and Testing">
-                    </a>
-                    <div class="desc">Software Engineering Fundamentals- Software Development and Testing</div>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr20.jpg">
-                        <img src="certificates/cr20.jpg" alt="E-Commerce & Tech Quiz (Flipkart GRiD 6.0)">
-                    </a>
-                    <div class="desc"> E-Commerce & Tech Quiz (Flipkart GRiD 6.0)</div>
-                </div>
-            </div>
-
-
-     
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr19.jpg">
-                        <img src="certificates/cr19.jpg" alt="Code IGNITER 2023 (GSSS)">
-                    </a>
-                    <div class="desc">Code IGNITER 2023 (GSSS)</div>
-                </div>
-            </div>
-
- 
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr18.jpg">
-                        <img src="certificates/cr18.jpg" alt="Speech Recognition in AI (Great Learning)">
-                    </a>
-                    <div class="desc">Speech Recognition in AI (Great Learning)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr17.jpg">
-                        <img src="certificates/cr17.jpg" alt="Introduction To MongoDB">
-                    </a>
-                    <div class="desc">Introduction To MongoDB</div>
-                </div>
-            </div>
-
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr16.jpg">
-                        <img src="certificates/cr16.jpg" alt="Programing Debugging Competition (Python)">
-                    </a>
-                    <div class="desc">Programing Debugging Competition (Python)</div>
-                </div>
-            </div>
-
-
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr15.jpg">
-                        <img src="certificates/cr15.jpg" alt="Programing, Soft Skill & Power Skill (CoachEd)">
-                    </a>
-                    <div class="desc">Programing, Soft Skill & Power Skill (CoachEd)</div>
-                </div>
-            </div>
-
-
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr14.jpg">
-                        <img src="certificates/cr14.jpg" alt="aws India Summit">
-                    </a>
-                    <div class="desc">AWS Summit India 2024</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr13.jpg">
-                        <img src="certificates/cr13.jpg" alt="AI&ML Internship @AiROBOSOFT (Onsite)">
-                    </a>
-                    <div class="desc">AI&ML Internship @AiROBOSOFT (Onsite)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr12.jpg">
-                        <img src="certificates/cr12.jpg" alt="Introduction to Neural Networks and Deep Learning(Great Learning)">
-                    </a>
-                    <div class="desc">Introduction to Neural Networks and Deep Learning(Great Learning)</div>
-                </div>
-            </div>
-           
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr12.jpg">
-                        <img src="certificates/cr12.jpg" alt="Introduction to Neural Networks and Deep Learning(Great Learning)">
-                    </a>
-                    <div class="desc">Introduction to Neural Networks and Deep Learning(Great Learning)</div>
-                </div>
-            </div>
- 
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr11.jpg">
-                        <img src="certificates/cr11.jpg" alt="Fundamentals in Big data and Cloud Computing(Ybi Foundation)">
-                    </a>
-                    <div class="desc">Fundamentals in Big data and Cloud Computing(Ybi Foundation)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr10.jpg">
-                        <img src="certificates/cr10.jpg" alt="Fashiion Clothing Classification Modelling (Ybi Foundation)">
-                    </a>
-                    <div class="desc">Fashiion Clothing Classification Modelling (Ybi Foundation)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr9.jpg">
-                        <img src="certificates/cr9.jpg" alt="Data Science and Machine Learning Internship by Ybi Foundation(2 Weeks)">
-                    </a>
-                    <div class="desc">Data Science and Machine Learning Internship by Ybi Foundation(2 Weeks)</div>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr8.jpg">
-                        <img src="certificates/cr8.jpg" alt="Ardduino vs Raspberry Pi (Great Learning)">
-                    </a>
-                    <div class="desc">Ardduino vs Raspberry Pi (Great Learning)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr7.jpg">
-                        <img src="certificates/cr7.jpg" alt="Machine Learning Algorithms (Great Learning)">
-                    </a>
-                    <div class="desc">Machine Learning Algorithms (Great Learning)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr6.jpg">
-                        <img src="certificates/cr6.jpg" alt="Data skills 3 Days Challenge (Crion Versity)">
-                    </a>
-                    <div class="desc">Generative AI for Beginners (Great Learning)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr5.jpg">
-                        <img src="certificates/cr5.jpg" alt="Data skills 3 Days Challenge (Crion Versity)">
-                    </a>
-                    <div class="desc">Data skills 3 Days Challenge (Crion Versity)</div>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr4.jpg">
-                        <img src="certificates/cr4.jpg" alt="Linear Algebra for Machine Learning (codedamn)">
-                    </a>
-                    <div class="desc">Linear Algebra for Machine Learning (codedamn)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr3.jpg">
-                        <img src="certificates/cr3.jpg" alt="be10X  1 Day AI Tools Workshop">
-                    </a>
-                    <div class="desc">be10X  1 Day AI Tools Workshop</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr2.jpg">
-                        <img src="certificates/cr2.jpg" alt="Applied Ethical Hacking and Rules of Engagement (Udemy)">
-                    </a>
-                    <div class="desc">Applied Ethical Hacking and Rules of Engagement (Udemy)</div>
-                </div>
-            </div>
-
-            <div class="responsive">
-                <div class="gallery">
-                    <a target="_blank" href="certificates/cr1.jpg">
-                        <img src="certificates/cr1.jpg" alt="30 Day Virtual Internship Kodacy (AI &ML)">
-                    </a>
-                    <div class="desc">30 Day Virtual Internship Kodacy (AI &ML)</div>
-                </div>
-            </div>
+<script>
+fetch('get_certificates.php')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('certificates-container');
+    data.forEach(cert => {
+      const div = document.createElement('div');
+      div.className = 'responsive';
+      div.innerHTML = `
+        <div class="gallery">
+          <a target="_blank" href="${cert.image_url}">
+            <img src="${cert.image_url}" alt="${cert.description}">
+          </a>
+          <div class="desc">${cert.description}</div>
         </div>
-    </section>
+      `;
+      container.appendChild(div);
+    });
+  })
+  .catch(error => {
+    console.error("Failed to load certificates:", error);
+  });
+</script>
 
  
 
@@ -509,3 +268,37 @@
     <script src="js/index.js"></script>
    </body>
    </html>
+
+<!-- Certificate Lightbox Modal -->
+<div id="certificate-modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); align-items:center; justify-content:center;">
+  <span id="certificate-modal-close" style="position:absolute; top:24px; right:32px; font-size:2.5rem; color:#fff; cursor:pointer; z-index:1001;">&times;</span>
+  <img id="certificate-modal-img" src="" alt="Certificate" style="max-width:90vw; max-height:80vh; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.5);">
+  <div id="certificate-modal-desc" style="color:#fff; text-align:center; margin-top:16px; font-size:1.1rem;"></div>
+</div>
+
+<script>
+// Certificate Lightbox Functionality
+const modal = document.getElementById('certificate-modal');
+const modalImg = document.getElementById('certificate-modal-img');
+const modalDesc = document.getElementById('certificate-modal-desc');
+const closeBtn = document.getElementById('certificate-modal-close');
+document.querySelectorAll('#certificates-container img').forEach(img => {
+  img.style.cursor = 'pointer';
+  img.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent link from opening new tab
+    modal.style.display = 'flex';
+    modalImg.src = this.src;
+    modalDesc.innerHTML = this.closest('.gallery').querySelector('.desc')?.innerHTML || '';
+    document.body.style.overflow = 'hidden';
+  });
+});
+closeBtn.onclick = function() {
+  modal.style.display = 'none';
+  modalImg.src = '';
+  modalDesc.innerHTML = '';
+  document.body.style.overflow = '';
+};
+modal.onclick = function(e) {
+  if (e.target === modal) closeBtn.onclick();
+};
+</script>
