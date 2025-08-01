@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   ftp-deploy:
-    name: FTP deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +17,8 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: 82.180.143.67               # ✅ No "ftp."
+        server: 82.180.143.67
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: 
+        server-dir: /public_html/
+        # No need to set local-dir — root is correct
